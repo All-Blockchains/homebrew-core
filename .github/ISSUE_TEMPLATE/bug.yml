@@ -16,11 +16,13 @@ body:
       label: Verification
       description: Please verify that you've followed these steps. If you cannot truthfully check these boxes, open a discussion at https://github.com/orgs/Homebrew/discussions instead.
       options:
-        - label: My "`brew doctor` output" says `Your system is ready to brew.` and am still able to reproduce my issue.
+        - label: My `brew doctor` output says `Your system is ready to brew.` and am still able to reproduce my issue.
           required: true
         - label: I ran `brew update` and am still able to reproduce my issue.
           required: true
         - label: I have resolved all warnings from `brew doctor` and that did not fix my problem.
+          required: true
+        - label: I searched for recent similar issues at https://github.com/Homebrew/homebrew-core/issues?q=is%3Aissue and found no duplicates.
           required: true
   - type: textarea
     attributes:
